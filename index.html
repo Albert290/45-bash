@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 45th Birthday Dad!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Age Verification Section -->
+    <div id="age-verification" class="active">
+        <div class="verification-container">
+            <h1>Welcome to Your Special Day!</h1>
+            <p>To begin the celebration, please enter your age:</p>
+            <input type="number" id="age-input" placeholder="Enter your age">
+            <button id="verify-btn">Continue</button>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Main Content (hidden until correct age is entered) -->
+    <div id="main-content">
+        <!-- Birthday Header -->
+        <header class="birthday-header">
+            <h1>Happy 45th Birthday Dad!</h1>
+            <div id="confetti-container"></div>
+        </header>
+
+        <!-- Family Messages Section -->
+        <section class="messages-section">
+            <h2>Messages From Your Loving Family</h2>
+            
+            <div class="message-cards">
+                <!-- Mother's Message -->
+                <div class="message-card">
+                    <div class="profile-pic">
+                        <img src="images/mother.jpg" alt="Mother">
+                    </div>
+                    <div class="message-content">
+                        <h3>From: Mom</h3>
+                        <p>Your heartfelt message from mother goes here...</p>
+                    </div>
+                </div>
+                
+                <!-- Sister's Message -->
+                <div class="message-card">
+                    <div class="profile-pic">
+                        <img src="images/sister.jpg" alt="Sister">
+                    </div>
+                    <div class="message-content">
+                        <h3>From: [Sister's Name]</h3>
+                        <p>Your heartfelt message from sister goes here...</p>
+                    </div>
+                </div>
+                
+                <!-- Brother's Message -->
+                <div class="message-card">
+                    <div class="profile-pic">
+                        <img src="images/brother.jpg" alt="Brother">
+                    </div>
+                    <div class="message-content">
+                        <h3>From: [Brother's Name]</h3>
+                        <p>Your heartfelt message from brother goes here...</p>
+                    </div>
+                </div>
+                
+                <!-- Your Message -->
+                <div class="message-card">
+                    <div class="profile-pic">
+                        <img src="images/you.jpg" alt="You">
+                    </div>
+                    <div class="message-content">
+                        <h3>From: [Your Name]</h3>
+                        <p>Your heartfelt message goes here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Memories Through the Years</h2>
+            <a href="#gallery" class="gallery-link">View Photo Gallery</a>
+            
+            <div id="gallery" class="gallery-grid">
+                <!-- Gallery images will be added here -->
+                <div class="gallery-item">
+                    <img src="images/dad1.jpg" alt="Dad photo 1">
+                    <p class="caption">Caption for photo 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dad2.jpg" alt="Dad photo 2">
+                    <p class="caption">Caption for photo 2</p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with love by your family ❤️</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
