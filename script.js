@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const verifyBtn = document.getElementById('verify-btn');
     const errorMessage = document.getElementById('error-message');
     const mainContent = document.getElementById('main-content');
-    const correctAge = 45;
+    const correctAge = 55;
     const birthYear = new Date().getFullYear() - correctAge;
 
     // Age verification logic
@@ -27,10 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Set birthday background color
             document.body.style.backgroundColor = '#f8bbd0'; // Light pink for celebration
             
-            // After 15 seconds, change background back
-            setTimeout(() => {
-                document.body.style.backgroundColor = '';
-            }, 15000);
+            
         } else {
             // Incorrect age
             errorMessage.textContent = `Oops, that's incorrect! Hint: You were born in ${birthYear}`;
@@ -48,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Confetti function
     function triggerConfetti() {
-        const duration = 15 * 1000;
+        const duration = 35 * 1000;
         const animationEnd = Date.now() + duration;
         const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
         
